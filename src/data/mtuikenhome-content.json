@@ -5,10 +5,10 @@
     "shortLine": "I build resilient backend systems powered by JVM/Spring and AWS"
   },
   "about": [
-    "I am a Java backend developer specializing in cloud-based SaaS applications, with a focus on performance, scalability, and accessibility. My expertise spans Spring Boot, REST/GraphQL APIs, and microservices architectures deployed on AWS.",
+    "I am a Java backend developer specializing in cloud-based SaaS applications, with a focus on performance, scalability, and accessibility.",
     "Over the past few years, I’ve contributed to enterprise grade projects in fintech, data analytics, and AI-driven platforms. My expertise lies in Java, Spring Boot, REST/GraphQL APIs, and microservices architectures, with strong proficiency in AWS cloud environments.",
     "Whether optimizing data pipelines, refactoring legacy systems, or designing new integrations, I bring a problem-solving mindset and a commitment to delivering robust solutions.",
-    "In my spare time, I homebrew, delivering some great pales and darks for parties with friends and family. My favourite recipe is Smoked Baltic Porter."
+    "In my spare time, I love homebrewing, crafting ales and lagers that make gatherings with friends and family special. Among my brews, the Smoked Baltic Porter stands out as my signature recipe."
   ],
   "experience": [
     {
@@ -47,7 +47,7 @@
     },
     {
       "name": "FinWin (coming soon)",
-      "url": "/stub",
+      "url": "/finwin",
       "image": "/images/finwin.png",
       "description": "Stock data profits calculator.",
       "stack": "Java/Spring, PostgreSQL, nginx, React/TypeScript"

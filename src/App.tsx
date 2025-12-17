@@ -27,7 +27,7 @@ export default function App() {
                 <Routes>
                     <Route path="/" element={<MainScreen />} />
                     <Route path="/monarchy" element={<Stub />} />
-                    <Route path="/stub" element={<Stub />} />
+                    <Route path="/finwin" element={<Stub />} />
                 </Routes>
             </Router>
         </ThemeProvider>

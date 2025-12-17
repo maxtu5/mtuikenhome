@@ -1,35 +1,16 @@
 import {Box, Link as MuiLink, Typography} from "@mui/material";
-import {useEffect, useState} from "react";
-import config from "../config/mtuikenhome-config";
 import {PositionCard, ProjectCard} from "./Card";
-import {Position, Project} from "../utils/types";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import {Link as RouterLink} from "react-router-dom";
+import  content  from '../data/mtuikenhome-content.json';
+import config from "../config/mtuikenhome-config";
 
 export function Details() {
-    const [aboutText, setAboutText] = useState<string[]>([]);
-    const [experience, setExperience] = useState<Position[]>([]);
-    const [projects, setProjects] = useState<Project[]>([]);
-
-    useEffect(() => {
-        fetch(config.jsonPath)
-            .then(res => {
-                if (!res.ok) throw new Error("Failed to load JSON");
-                return res.json();
-            })
-            .then(data => {
-                setAboutText(data.about);
-                setExperience(data.experience);
-                setProjects(data.projects);
-            })
-            .catch(err => console.error(err));
-    }, []);
-
     return (
         <Box>
             {/* About Section */}
             <Box id="about" mb={24}>
-                {aboutText.map((paragraph, idx) => (
+                {content.about.map((paragraph, idx) => (
                     <Typography key={idx} paragraph>
                         {paragraph}
                     </Typography>
@@ -41,7 +22,7 @@ export function Details() {
                 <Typography variant={'h3'} mb={4} color={'white'}>
                     Experience
                 </Typography>
-                {experience.map((pos, idx) => (
+                {content.experience.map((pos, idx) => (
                     <PositionCard key={idx} position={pos}/>
                 ))}
                 <MuiLink variant={'h6'}
@@ -63,7 +44,7 @@ export function Details() {
                 <Typography variant={'h3'} mb={4} color={'white'}>
                     Projects
                 </Typography>
-                {projects.map((proj, idx) => (
+                {content.projects.map((proj, idx) => (
                     <ProjectCard key={idx} project={proj}/>
                 ))}
             </Box>
