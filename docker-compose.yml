@@ -9,6 +9,7 @@ services:
       - "443:443"
     volumes:
       - ./build:/usr/share/nginx/html
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro   # <-- mount your custom config
       - ./nginx/certbot/conf:/etc/letsencrypt
       - ./nginx/certbot/www:/var/www/certbot
 
