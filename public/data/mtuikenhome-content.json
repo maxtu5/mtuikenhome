@@ -1,0 +1,70 @@
+{
+  "main": {
+    "name": "Max Tuiken",
+    "title": "Backend Software Engineer",
+    "shortLine": "I build resilient backend systems powered by JVM/Spring and AWS"
+  },
+  "about": [
+    "I am a Java backend developer specializing in cloud-based SaaS applications, with a focus on performance, scalability, and accessibility. My expertise spans Spring Boot, REST/GraphQL APIs, and microservices architectures deployed on AWS.",
+    "Over the past few years, I’ve contributed to enterprise grade projects in fintech, data analytics, and AI-driven platforms. My expertise lies in Java, Spring Boot, REST/GraphQL APIs, and microservices architectures, with strong proficiency in AWS cloud environments.",
+    "Whether optimizing data pipelines, refactoring legacy systems, or designing new integrations, I bring a problem-solving mindset and a commitment to delivering robust solutions.",
+    "In my spare time, I homebrew, delivering some great pales and darks for parties with friends and family. My favourite recipe is Smoked Baltic Porter."
+  ],
+  "experience": [
+    {
+      "role": "Software Engineer, Intuit",
+      "dates": "2024 – 2025",
+      "description": "Built and enhanced mission‑critical financial SaaS features, improving system reliability for millions of users. Refactored legacy integrations and unit tests, reducing CI/CD pipeline failures by 30%. Maintained AWS Aurora RDS clusters, ensuring disaster recovery planning at upgrades.",
+      "stack": "Java, Spring, REST/GraphQL, TigerGraph, AWS Aurora RDS MySQL, Jenkins, Docker, Argo CD, Splunk, Wavefront, OpenTelemetry"
+    },
+    {
+      "role": "Backend Java Developer, Inetex",
+      "dates": "2022 – 2023",
+      "description": "Designed APIs for in-memory historical stock data analytics. Optimized storage policies with sharding, added new levels of caching to business flows for performance. Implemented automated data update and validation services. Built web scraping applications for data collection.",
+      "stack": "Java, Spring, PostgreSQL, MongoDB, AWS, JUnit, Mockito, Maven, Docker, Selenium"
+    },
+    {
+      "role": "Backend Java Engineer, NTechLab",
+      "dates": "2019 – 2022",
+      "description": "Developed APIs for managing ML pipelines. Built ETL jobs for analytics-driven data transformation.",
+      "stack": "Java, Spring, Spring Security, JPA/Hibernate, Oracle DB, JUnit, Mockito, Maven"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Archme.ru",
+      "url": "https://archme.ru",
+      "image": "/images/archme.png",
+      "description": "Interactive map of architectural sites in central Russia.",
+      "stack": "Java/Spring, MongoDB, nginx, React/TypeScript, Yandex maps"
+    },
+    {
+      "name": "Monarchy (coming soon)",
+      "url": "/monarchy",
+      "image": "/images/monarchy.png",
+      "description": "Graph database with 15K+ of European nobles.",
+      "stack": "Java/Spring, neo4j, GraphQL, nginx, React/TypeScript"
+    },
+    {
+      "name": "FinWin (coming soon)",
+      "url": "/stub",
+      "image": "/images/finwin.png",
+      "description": "Stock data profits calculator.",
+      "stack": "Java/Spring, PostgreSQL, nginx, React/TypeScript"
+    }
+  ],
+  "links": [
+    {
+      "icon": "github",
+      "link": "https://github.com/maxtu5"
+    },
+    {
+      "icon": "linked",
+      "link": "https://linkedin.com/in/max-tuiken"
+    },
+    {
+      "icon": "email",
+      "link": "mailto:max.tuiken@gmail.com"
+    }
+  ]
+}

@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import MainScreen from "./components/MainScreen";
+import { Stub } from "./components/Stub";
+import {color_light} from "./utils/types";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const theme = createTheme({
+    palette: {
+        primary: { main: color_light },
+        text: { primary: color_light },
+    },
+    components: {
+        MuiTypography: {
+            styleOverrides: {
+                root: {
+                    color: color_light,
+                },
+            },
+        },
+    },
+});
+
+export default function App() {
+    return (
+        <ThemeProvider theme={theme}>
+            <Router>
+                <Routes>
+                    <Route path="/" element={<MainScreen />} />
+                    <Route path="/monarchy" element={<Stub />} />
+                    <Route path="/stub" element={<Stub />} />
+                </Routes>
+            </Router>
+        </ThemeProvider>
+    );
 }
-
-export default App;
