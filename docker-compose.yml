@@ -26,4 +26,3 @@ services:
     volumes:
       - ./nginx/certbot/www:/var/www/certbot
       - ./nginx/certbot/conf:/etc/letsencrypt
-    entrypoint: /bin/sh
