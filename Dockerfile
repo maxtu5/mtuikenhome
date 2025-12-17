@@ -1,9 +1,6 @@
 # Use lightweight Nginx
 FROM nginx:alpine
 
-# Copy custom Nginx config (optional)
-# COPY nginx.conf /etc/nginx/conf.d/default.conf
-
 # Copy React build output
 COPY ./build /usr/share/nginx/html
 
