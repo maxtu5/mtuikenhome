@@ -5,7 +5,9 @@ import  content  from '../data/mtuikenhome-content.json';
 export function MainBar() {
 
     return (
-        <Box>
+        <Box width={'100%'}
+             // bgcolor={'darkcyan'}
+        >
             <Typography variant="h3" gutterBottom sx={{fontWeight: "bold", color: 'white'}}>
                 {content.main.name}
             </Typography>

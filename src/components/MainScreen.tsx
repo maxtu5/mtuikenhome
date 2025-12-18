@@ -1,6 +1,6 @@
 import {Box} from "@mui/material";
 import {Details} from "./Details";
-import {color_indigo, color_light} from "../utils/types";
+import {color_indigo} from "../utils/types";
 import {MainBar} from "./MainBar";
 import {IconRow} from "./IconRow";
 
@@ -8,7 +8,7 @@ export default function MainScreen() {
     return (
         <Box
             width="100%"
-            height="100vh"
+            height={{xs:'auto', md:"100vh"}}
             display="flex"
             flexDirection={{xs: "column", md: "row"}}
             sx={{
@@ -23,6 +23,7 @@ export default function MainScreen() {
                 paddingX={6}
                 display="flex"
                 flexDirection="column"
+                sx={{ boxSizing: "border-box" }}
             >
                 <MainBar/>
 
@@ -38,7 +39,8 @@ export default function MainScreen() {
                 paddingTop={8}
                 paddingX={6}
                 sx={{
-                    overflowY: "auto",
+                    boxSizing: "border-box",
+                    overflowY: { xs: "visible", md: "auto" },
                 }}
             >
                 <Details/>

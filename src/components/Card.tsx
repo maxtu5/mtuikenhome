@@ -1,5 +1,5 @@
 import {Box, Typography, Link as MuiLink} from "@mui/material";
-import {color_indigo, color_light, Position} from "../utils/types";
+import {Position} from "../utils/types";
 import {Link as RouterLink} from "react-router-dom";
 
 // Pill-shaped skill badge
@@ -50,13 +50,13 @@ export function BaseCard({title, subtitle, description, stack, image, url}: Base
                 },
                 mb: 3,
                 display: "flex",
-                flexDirection: {xs: "column", md: "row"},
+                flexDirection: 'row' //{xs: "column", md: "row"},
             }}
         >
             {/* Left column: subtitle or image */}
             <Box
                 sx={{
-                    width: {xs: "100%", md: "20%"},
+                    width: '30%', //{xs: "100%", md: "20%"},
                     mb: {xs: 2, md: 2},
                     p: 2,
                     display: "flex",

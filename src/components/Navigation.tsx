@@ -36,7 +36,7 @@ export function Navigation() {
         <Box
             sx={{
                 mt: 4,
-                display: "flex",
+                display: {xs:"none", md: 'flex'} ,
                 flexDirection: "column",
                 gap: 2,
                 position: "sticky",
