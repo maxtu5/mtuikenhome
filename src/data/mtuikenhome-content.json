@@ -39,8 +39,8 @@
       "stack": "Java/Spring, MongoDB, nginx, React/TypeScript, Yandex maps"
     },
     {
-      "name": "Monarchy (coming soon)",
-      "url": "https://tuiken.site/monarchy",
+      "name": "Monarchy",
+      "url": "https://tuiken.site/monarchy/",
       "image": "/images/monarchy.png",
       "description": "Graph database with 15K+ of European nobles.",
       "stack": "Java/Spring, neo4j, GraphQL, nginx, React/TypeScript"
