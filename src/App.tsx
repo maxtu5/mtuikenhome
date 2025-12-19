@@ -26,7 +26,6 @@ export default function App() {
             <Router>
                 <Routes>
                     <Route path="/" element={<MainScreen />} />
-                    <Route path="/monarchy" element={<Stub />} />
                     <Route path="/finwin" element={<Stub />} />
                 </Routes>
             </Router>

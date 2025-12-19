@@ -40,7 +40,7 @@
     },
     {
       "name": "Monarchy (coming soon)",
-      "url": "/monarchy",
+      "url": "https://tuiken.site/monarchy",
       "image": "/images/monarchy.png",
       "description": "Graph database with 15K+ of European nobles.",
       "stack": "Java/Spring, neo4j, GraphQL, nginx, React/TypeScript"
