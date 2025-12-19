@@ -59,7 +59,7 @@ export function BaseCard({title, subtitle, description, stack, image, url}: Base
                     width: '30%', //{xs: "100%", md: "20%"},
                     mb: {xs: 2, md: 2},
                     p: 2,
-                    display: "flex",
+                    display: {xs: 'none', md: "flex"},
                     alignItems: "flex-start",
                     justifyContent: "center",
                 }}
@@ -88,13 +88,22 @@ export function BaseCard({title, subtitle, description, stack, image, url}: Base
                              }}
                              fontWeight="bold"
                              underline={'none'}
-                             component={RouterLink} to= {url}>
+                             component={RouterLink} to={url}>
                         {title}
                     </MuiLink>
                 ) : (
-                    <Typography variant="h6" fontWeight="bold">
-                        {title}
-                    </Typography>
+                    <Box sx={{
+                        display: "flex",
+                        flexDirection: 'row',
+                        gap: 1
+                    }}>
+                        <Typography display={{sx: 'block', md: 'none'}} variant="subtitle1">
+                            {subtitle}
+                        </Typography>
+                        <Typography variant="h6" fontWeight="bold">
+                            {title}
+                        </Typography>
+                    </Box>
                 )}
                 <Typography paragraph>{description}</Typography>
 
