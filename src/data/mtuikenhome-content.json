@@ -15,13 +15,13 @@
       "role": "Software Engineer, Intuit",
       "dates": "2024 – 2025",
       "description": "Built and enhanced mission‑critical financial SaaS features, improving system reliability for millions of users. Refactored legacy integrations and unit tests, reducing CI/CD pipeline failures by 30%. Maintained AWS Aurora RDS clusters, ensuring disaster recovery planning at upgrades.",
-      "stack": "Java, Spring, REST/GraphQL, TigerGraph, AWS Aurora RDS MySQL, Jenkins, Docker, Argo CD, Splunk, Wavefront, OpenTelemetry"
+      "stack": "Java, Spring, REST/GraphQL, TigerGraph, AWS Aurora RDS MySQL, Karate test, Jenkins, Docker, Argo CD, Splunk, Wavefront, OpenTelemetry"
     },
     {
       "role": "Backend Java Developer, Inetex",
       "dates": "2022 – 2023",
       "description": "Designed APIs for in-memory historical stock data analytics. Optimized storage policies with sharding, added new levels of caching to business flows for performance. Implemented automated data update and validation services. Built web scraping applications for data collection.",
-      "stack": "Java, Spring, PostgreSQL, MongoDB, AWS, JUnit, Mockito, Maven, Docker, Selenium"
+      "stack": "Java, Spring, REST, PostgreSQL, MongoDB, AWS, JUnit, Mockito, Maven, Docker, Selenium"
     },
     {
       "role": "Backend Java Engineer, NTechLab",

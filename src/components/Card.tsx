@@ -88,7 +88,11 @@ export function BaseCard({title, subtitle, description, stack, image, url}: Base
                              }}
                              fontWeight="bold"
                              underline={'none'}
-                             component={RouterLink} to={url}>
+                             component={RouterLink}
+                             to={url}
+                             target="_blank"
+                             rel="noopener noreferrer"
+                    >
                         {title}
                     </MuiLink>
                 ) : (
